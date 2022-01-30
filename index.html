@@ -15,16 +15,13 @@
 
 <body>
     <!-- navigation -->
-    <div class="container-fluid position-fixed navigation-back" data-aos="fade-down">
+    <div class="container-fluid navigation-back" data-aos="fade-down">
         <div class="container py-3 navigation">
             <nav class="d-flex align-items-center justify-content-between">
                 <!-- logo    -->
                 <div class="col logo">
                     <b><a href=""><span class="c">C</span>K</a></b>
                 </div>
-                <div class="menu d-block d-md-none ml-auto" onclick="toggle()">
-            <span class="btn " id="toggle-button"><i class="fas fa-bars"></i></span></i>
-        </div>
                 <ul class="col ml-auto justify-content-end align-items-center d-none d-md-flex">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#about-me">About-Me</a></li>
@@ -35,11 +32,12 @@
               >
             </li>
           </ul>
-          
-<!--         yeh jagah  -->
+        <div class="ml-auto menu d-block d-md-none" onclick="toggle()">
+            <span class="btn " id="toggle-button"><i class="fas fa-bars"></i></span></i>
+        </div>
         </nav>
         <div class="text-center py-5 menu-toggle" id="toggler" >
-        <div class="py-1"><a href="#intro">Intro</a></div>
+            <div class="py-1"><a href="#intro">Intro</a></div>
         <div class="py-1"><a href="#about-me">About-Me</a></div>
         <div class="py-1"><a href="#skill">Skills</a></div>
         <div class="py-1"><a href="#project">Projects</a></div>
