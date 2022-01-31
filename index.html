@@ -396,27 +396,27 @@
               <h4 class="text-center">
                 <b><span class="c">G</span>et in Touch</b>
               </h4>
-              <form action="#">
-                <div class="py-3">
-                  <label for="Name">Name</label> <br />
-                  <input class="name my-1" type="text" />
-                </div>
-                <div class="py-3">
-                  <label for="email">E-mail</label> <br />
-                  <input class="email my-1" type="email" />
-                </div>
-                <div class="py-3">
-                  <label for="Textarea">Your message</label> <br />
-                  <textarea
-                    class="text-area my-1"
-                    name="text-area"
-                    id=""
-                  ></textarea>
-                </div>
-                <div class="py-3">
-                  <button class="btn send px-3 py-2">send message</button>
-                </div>
-              </form>
+              <form action="POST" data-netlify="true">
+            <div class="py-3">
+              <label for="Name">Name</label> <br />
+              <input name="name" class="name my-1" type="text"   required/>
+            </div>
+            <div class="py-3">
+              <label for="email">E-mail</label> <br />
+              <input class="email my-1" name="email" type="email"   required/>
+            </div>
+            <div class="py-3">
+              <label for="Textarea" >Your message</label> <br />
+              <textarea
+                class="text-area my-1"
+                name="message"
+                id="" required
+              ></textarea>
+            </div>
+            <div class="py-3">
+              <button class="btn send px-3 py-2" type="submit">send message</button>
+            </div>
+          </form>
             </div>
           </div>
         </div>
