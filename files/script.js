@@ -16,3 +16,12 @@ function toggle() {
     ).innerHTML = `<i class="fas fa-bars"></i>`;
   }
 }
+
+// menu toggler for choices 
+function menuclick() {
+  document.getElementById("toggler").style.display = "none";
+  show = false;
+  document.getElementById(
+    "toggle-button"
+  ).innerHTML = `<i class="fas fa-bars"></i>`;
+}
